@@ -1,0 +1,54 @@
+MongoDB
+
+    - NoSQL db
+    - Document
+        A document is a single data object in a MongoDB database 
+        that is composed of field/value pairs, similar toJSON property/value pairs.
+        -- MongoDB stores documents internally as BSON documents. 
+        -- A BSON document(Binary JSON) is a binary representation of JSON with additional type information. 
+        -- BSON types include string, integer, double, date, boolean, null, null, and others. 
+        -- A BSON document may not exceed 16 MB in size.
+
+- A collection is a group of related documents in a MongoDB database.
+
+Create db
+    > use db_name
+
+Create collection
+    > db.createCollection('collection_name')
+
+Drop db
+    > db.dropDatabase('students')
+
+Insert documents
+    > db.students.insertOne({name: "sample-name", ...})
+    > students = [
+        {}, {}, {}
+    ]
+    > db.students.insertMany(students)
+
+
+Findings documents
+    > db.students.find()
+    > db.students.find({name: "Sue"})
+
+
+Conditioning [$and, $or, $in, $lte, $gte, $ne]
+    > db.students.find({ $and: [{name: "Abhi"}, {gpa: {$gte: 3.5}}]})
+    {
+    _id: ObjectId('66bdb4d46073ae53ea9c06ff'),
+    name: 'Abhi',
+    gpa: 4
+    }
+
+
+Update Document:
+    syntax: db.collection.updateOne({query}, {update})
+
+    > db.students.updateOne({ name: 'Sue'}, { $set: { gpa: 3.3 }})
+    > db.students.updateMany({ gpa: 4}, { $set: { gpa: 3.9 }})
+
+Update Document:
+
+    > db.students.deleteOne({ name: 'Sue'})
+    > db.students.deleteMany({ gpa: 3.5})

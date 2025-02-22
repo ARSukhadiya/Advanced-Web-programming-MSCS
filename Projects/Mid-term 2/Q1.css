@@ -1,0 +1,89 @@
+.grid-item{
+  color: grey;
+  text-align: end;
+}
+
+#B{
+  background-image: url("Q2/b.jpg");
+  color: white;
+}
+
+#C{
+  background-image: url("Q2/c.jpg");
+  color: white;
+
+}
+
+#E{
+  background-image: url("Q2/e.jpg");
+  color: white;
+}
+
+#F{
+  background-image: url("Q2/f.jpg");
+  color: white;
+}
+
+#H{
+  background-image: url("Q2/h.jpg");
+  color: white;
+}
+
+#L{
+  background-image: url("Q2/l.jpg");
+  color: white;
+}
+
+#M{
+  background-image: url("Q2/m.jpg");
+  color: white;
+}
+
+#O{
+  color: white;
+  background-image: url("Q2/o.jpg");
+}
+
+#P{
+  background-image: url("Q2/p.jpg");
+  color: white;
+}
+
+#Q{
+  background-image: url("Q2/q.jpg");
+  color: white;
+}
+
+#D{
+  color: white;
+  background-color: blue;
+}
+
+#I{
+  color: white;
+  background-color: lightblue;
+}
+
+#J{
+  background-color: lightskyblue;
+  color: white;
+}
+
+#K{
+  background-color: blue;
+  color: white;
+}
+
+img{
+  height: 100px;
+}
+
+a{
+  display: inline-block;
+  background-color: rgb(218, 77, 6);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 100px;
+
+}

@@ -1,0 +1,9 @@
+Async
+Defer
+
+let (introduced in ES6)
+var (have function/block/global scope) 
+
+Const (for const)
+
+Object

@@ -1,0 +1,49 @@
+p{
+    color: blue;
+}
+
+/* #p2{
+    color: red;
+}
+
+.p3{
+    color: blueviolet;
+} */
+
+#sample-background{
+    background-color: aqua;
+}
+
+pre{
+    /* background-image: url(web.jpg);
+    background-size: contain; */
+    /* background-repeat: repeat; */
+
+    background: beige url(web.jpg) no-repeat fixed center;
+}
+
+#shadow{
+    font-size: 70px;
+    text-shadow: 0px 10px 5px red;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;    
+}
+
+a:link{
+    color: blue;
+}
+
+/* a:visited{
+    color: red;
+}
+
+a:hover{
+    color: orange;
+}
+
+a:active{
+    color: green;
+} */

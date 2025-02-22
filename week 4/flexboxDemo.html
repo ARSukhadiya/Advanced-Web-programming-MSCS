@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flextcontainer{
+            background-color: indianred;
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-wrap: wrap-reverse; */
+            flex-flow: row wrap;
+
+        }
+
+        .flex-child{
+            background-color: wheat;
+            margin: 20px;
+            padding: 20px;
+            width: 100px;
+        }
+        .flextcontainer2{
+            background-color: indianred;
+            display: flex;
+            flex-flow: row wrap;
+            height: 400px;
+            align-items: flex-start;
+            align-content: center;
+            justify-content: center;
+        }
+        
+        .flex-child2{
+            background-color: wheat;
+            margin: 20px;
+            padding: 20px;
+            width: 100px;
+            text-align: center;
+        }
+
+        #one{
+            /* order: 2; */
+            /* flex-grow: 2; */
+            /* flex-basis: 300px; */
+            align-self: flex-start;
+        }
+        #two{
+            /* order: 1;
+            flex-grow: 2; */
+            /* flex-basis: 100px; */
+            align-self: center;
+
+        }
+        #three{
+            /* order: 3;
+            flex-grow: 2; */
+            /* flex-basis: 200px; */
+            align-self: flex-end;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="flextcontainer">
+        <div class="flex-child">One</div>
+        <div class="flex-child">Two</div>
+        <div class="flex-child">Three</div>
+        <div class="flex-child">Four</div>
+        <div class="flex-child">Five</div>
+        <div class="flex-child">Six</div>
+        <div class="flex-child">Seven</div>
+        <div class="flex-child">Eight</div>
+    </div>
+    <hr>
+    <div class="flextcontainer2">
+        <div class="flex-child2" id="one">One</div>
+        <div class="flex-child2" id="two">Two</div>
+        <div class="flex-child2" id="three">Three</div>
+    </div>
+
+</body>
+</html>

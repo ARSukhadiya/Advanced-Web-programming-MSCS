@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="tosForm" action="https://wp.zybooks.com/form-viewer.php" method="post" target="_blank">
+        <label for="screenName">Screen name:</label>
+        <input type="text" id="screenName" name="screenName">
+
+        <label for="zip">ZIP code:</label>
+        <input type="text" id="zip" name="zip" placeholder="5-digit ZIP code">
+
+        <label for="tos">Type <strong>yes</strong> if you agree to the terms of service:</label>
+        <input type="text" name="agreement" id="tos">
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        let tosForm = document.querySelector("#tosForm");
+        tosForm.addEventListener("submit", checkForm);
+
+        let screenNameValid = false
+        let zipCodeValid = false
+        let agreementValid = false
+        let screenNameWidget = document.getElementById('screenName')
+        let zipCodeWidget = document.getElementById('zip')
+        let agreementWidget = document.getElementById('tos')
+
+        checkScreenName = (e) => {
+            screenNameValid = e.target.value.trim() != ''
+        }
+
+        checkZipCode = (e) => {
+            let regex = /^\d{5}$/
+            zipCodeValid = e.target.value.trim().match(regex)
+        }
+
+        checkAgreement = (e) => {
+            agreementValid = e.target.value.trim().toLowerCase() == 'yes'
+        }
+
+        screenNameWidget.addEventListener("input", checkScreenName)
+        zipCodeWidget.addEventListener("input", checkZipCode)
+        agreementWidget.addEventListener("input", checkAgreement)
+
+
+        function checkForm(event) {
+            tosForm.screenName.style.backgroundColor = "LightGreen";
+            tosForm.zip.style.backgroundColor = "LightGreen";
+            tosForm.tos.style.backgroundColor = "LightGreen";
+
+            // Replace false with an expression that checks whether tosForm.screenName.value is empty.
+            if (!screenNameValid) {
+                tosForm.screenName.style.backgroundColor = "Orange";
+                event.preventDefault();
+            }
+
+            // Replace false with an expression that checks whether the length of tosForm.zip is not 5.
+            if (!zipCodeValid) {
+                tosForm.zip.style.backgroundColor = "Orange";
+                event.preventDefault();
+            }
+
+            // Replace false with an expression that checks whether tosForm.tos is not "yes".
+            if (!agreementValid) {
+                tosForm.tos.style.backgroundColor = "Orange";
+                event.preventDefault();
+            }
+        }
+
+    </script>
+</body>
+
+</html>

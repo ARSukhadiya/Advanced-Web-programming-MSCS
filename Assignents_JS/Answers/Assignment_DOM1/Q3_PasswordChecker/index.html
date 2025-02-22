@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3_PasswordChecker</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <p>Choose a strong password that meets the following criteria</p>
+        <ol class="list_criteria">
+            <li id="li1">At least 6 characters long.</li>
+            <li id="li2">Contains at least 1 digit.</li>
+            <li id="li3">Is not "password1".</li>
+        </ol>
+        Password: <input id="password" type="text" placeholder="Enter password" value="">
+        <br>
+        <span id="error_text" class="error_text"></span>
+        <br>
+        <button id="Submit_btn" onclick="onSubmitPress()">Submit</button>
+    </div>
+</body>
+
+</html>

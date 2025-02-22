@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes changeColor{
+            /* from{background-color: red;}
+            to{background-color: yellow;}     */
+            /* 0%{background-color: red;}
+            25%{background-color: blue; width: 300px; border-radius: 50px;}
+            50%{background-color: green;}
+            75%{background-color: yellow;}
+            100%{background-color: orange;} */
+        }
+
+        @keyframes zoomInOut {
+            50%{width: 210px; height: 40px;}
+        }
+
+        #animate{
+            color: white;
+            text-align: center;
+            size: 100px;
+            padding: 25px;
+            background-color: green;
+            width: 200px;
+            height: 30px;
+            border-radius: 20px;
+        }
+
+        #animate:hover{
+            animation-name: zoomInOut;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="animate">
+        Animated Button
+    </div>
+</body>
+</html>

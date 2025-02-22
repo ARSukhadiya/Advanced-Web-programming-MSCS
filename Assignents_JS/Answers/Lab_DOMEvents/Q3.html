@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover and Mouseout Example</title>
+    <style>
+        /* Initial style for the element */
+        #myElement {
+            background-color: lightblue;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            border: 2px solid black;
+            margin: 50px;
+            cursor: pointer; /* Indicates that the element is interactive */
+        }
+
+        /* Style applied on mouseover */
+        .hovered {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="myElement">
+        How are you?
+    </div>
+
+    <script>
+        // Get the element by its ID
+        const myElement = document.getElementById('myElement');
+
+        // Add event listener for mouseover
+        myElement.addEventListener('mouseover', function() {
+            this.classList.add('hovered');
+            myElement.textContent = "Welcome!"
+        });
+
+        // Add event listener for mouseout
+        myElement.addEventListener('mouseout', function() {
+            this.classList.remove('hovered');
+            myElement.textContent = "How are you?"
+        });
+    </script>
+</body>
+</html>

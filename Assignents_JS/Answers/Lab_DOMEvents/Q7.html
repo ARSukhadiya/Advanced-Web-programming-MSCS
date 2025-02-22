@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onkeyup Event Example</title>
+    <style>
+        /* Style for the input and display area */
+        #textInput {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            width: 300px;
+            margin: 20px;
+        }
+        
+        #textDisplay {
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid #000;
+            width: 300px;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="textInput" placeholder="Type here..." onkeyup="updateText()">
+    <div id="textDisplay">Your text will appear here...</div>
+
+    <script>
+        function updateText() {
+            // Get the input and display elements
+            const input = document.getElementById('textInput');
+            const display = document.getElementById('textDisplay');
+            
+            // Update the text content of the display element with the input value
+            display.textContent = input.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>

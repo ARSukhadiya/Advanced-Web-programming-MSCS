@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div id="centerDiv" style="border: 1px; border-style: solid; width: 500px; height: 340px; padding: 10px 30px;">
+        <h1 style="text-align: center;">Happy Birthday Message Creator</h1> 
+        <form id="survey-form" action="">
+
+            <p>
+                <label for="message">Message?</label> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="message" id="message" value="Happy birthday!">
+            </p>
+            <p>
+                <label for="email">Email address?</label> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" name="email" id="email" placeholder="name@domain.com">
+            </p>
+            <p>
+                <label for="date">Date to send?</label> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="date" name="date" id="date">
+            </p>
+            <p>
+                <label for="color">Message color?</label> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="color" name="color" id="color">
+            </p>
+            <p>
+                <label for="blinks">Number of blinks?</label> 
+                &nbsp;&nbsp;&nbsp;
+                <input type="number" name="blinks" id="blinks" value="0" min="0" max="10" style="width: 50px;">
+            </p>
+            <p>
+                <label for="music_vol">Music volume?</label> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="range" name="music_vol" id="music_vol" value="20" min="0" max="50">
+            </p>
+
+            <input type="submit" name="submit" id="submit" value="Send Birthday Message">
+        </form>
+    </div>
+</body>
+</html>

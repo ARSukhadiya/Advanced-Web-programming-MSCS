@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        select {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Change Document Background Color</h1>
+    <label for="colorSelect">Choose a color:</label>
+    <select id="colorSelect" onchange="changeBackgroundColor()">
+        <option value="">Select a color</option>
+        <option value="lightblue">Light Blue</option>
+        <option value="lightgreen">Light Green</option>
+        <option value="lightcoral">Light Coral</option>
+        <option value="lightyellow">Light Yellow</option>
+        <option value="lightgray">Light Gray</option>
+    </select>
+
+    <script>
+        function changeBackgroundColor() {
+            // Get the select element
+            const colorSelect = document.getElementById('colorSelect');
+            
+            // Get the selected color value
+            const selectedColor = colorSelect.value;
+            
+            // Change the background color of the document
+            document.body.style.backgroundColor = selectedColor;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+Professor:
+	Ms. Dharmale, Pragati
+	E-mail: pragati.dharmale@sfbu.edu
+
+	Zoom Meeting: https://sfbu-edu.zoom.us/meeting/register/tZ0rc-mtrDIqG9wwsMmpdedvsNcnaUk4TJQVLinks to an external site.
+	Meeting ID 853 1624 5945
+	
+
+	
+
+Description:
+	(course teaches) How to build modern web applications with web application frameworks
+
+
+Course areas:
+	- Understand how the web application framework performs, and 
+	- shows students how to use various features of the framework to solve many problems in real-world development scenarios they’re likely to face
+	- work with HTML, CSS, JavaScript, the Object-relational Mapping Framework, 
+		and other web technologies 
+			Bootstrap, JavaScript, AJAX, jQuery, web services,  Node.js, web frameworks/React, MongoDB
+	- Model-View-Controller architectural pattern, 
+		and then work their way toward advanced topics as well as mobile web development techniques
+

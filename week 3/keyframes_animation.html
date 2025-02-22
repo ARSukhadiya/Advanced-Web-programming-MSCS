@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes changeColor{
+            /* from{background-color: red;}
+            to{background-color: yellow;}     */
+            0%{background-color: red;}
+            25%{background-color: blue; width: 300px; border-radius: 50px;}
+            50%{background-color: green;}
+            75%{background-color: yellow;}
+            100%{background-color: orange;}
+        }
+
+        #animate{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            animation-name: changeColor;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="animate"></div>
+</body>
+</html>

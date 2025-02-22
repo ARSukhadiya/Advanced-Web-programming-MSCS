@@ -1,0 +1,11 @@
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: rgb(14 25 175);
+}
+
+.profile {
+  justify-content: space-around;
+}
+
+.card {
+  margin: 0px 20px;
+}

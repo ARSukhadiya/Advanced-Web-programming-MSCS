@@ -1,0 +1,35 @@
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: rgb(75 35 35);
+    font-weight: 600;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* .build-for {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+
+}
+     
+.build-for-1{
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+}
+
+.build-for-title {
+    font-weight: 600;
+} */

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseenter and Mouseleave Example</title>
+    <style>
+        /* Container to hold the marquee */
+        #marquee-container {
+            width: 100%;
+            overflow: hidden; /* Hide scrollbars */
+            white-space: nowrap; /* Ensure text stays in one line */
+            background-color: lightgray;
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        /* Style for the marquee */
+        #marquee {
+            display: inline-block;
+            padding-left: 100%; /* Start the text off-screen */
+            animation: marquee 10s linear infinite;
+        }
+
+        /* Keyframes for scrolling animation */
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="marquee-container">
+        <div id="marquee">
+            This is a scrolling text. Mouse over to stop the scrolling, and mouse out to resume.
+        </div>
+    </div>
+
+    <script>
+        // Get the marquee element
+        const marquee = document.getElementById('marquee');
+
+        // Function to pause the marquee
+        function pauseMarquee() {
+            marquee.style.animationPlayState = 'paused';
+        }
+
+        // Function to resume the marquee
+        function resumeMarquee() {
+            marquee.style.animationPlayState = 'running';
+        }
+
+        // Add event listeners for mouseenter and mouseleave
+        marquee.addEventListener('mouseenter', pauseMarquee);
+        marquee.addEventListener('mouseleave', resumeMarquee);
+    </script>
+</body>
+</html>

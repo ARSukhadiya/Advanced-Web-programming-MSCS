@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Example</title>
+    <style>
+        /* Initial button style */
+        #myButton {
+            background-color: lightblue;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Style to apply after clicking */
+        #myButton.clicked {
+            background-color: red;
+            color: white;
+        }
+    </style>
+
+    <script>
+        // Function to check user's choice and open a popup window
+        function askToOpenPopup() {
+            // Ask the user if they want to see a popup window
+            let okPressed = window.confirm("Would you like to see a popup window?");
+            
+            // If the user clicks "OK", open a new popup window
+            if (okPressed) {
+                // Use window.open() to create a new popup window
+                window.open("", "PopupWindow", "width=400,height=200");
+            } else {
+                // User clicked "Cancel", you could handle this case if needed
+                console.log("User chose not to open the popup window.");
+            }
+        }
+
+        // Run the function when the page loads
+        window.onload = function() {
+            askToOpenPopup();
+        };
+    </script>
+</head>
+<body>
+    <h1>Popup Demo</h1>
+    <button id="myButton" onclick="changeColor()">Click Me</button>
+
+    <script>
+        // JavaScript function to change button color
+        function changeColor() {
+            var button = document.getElementById('myButton');
+            button.classList.add('clicked');
+        }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{background-color:black;}
+
+#instrument{
+	height:116px;
+	width:812px;
+	padding-right:10px;
+	padding-top:50px;
+	margin:auto;
+	position:absolute;
+	top:0; left:0; bottom:0; right:0;
+}
+.box{
+	width:100px;
+	height:100px;
+	margin-left:10px;
+	margin-top:10px;
+	float:left;	
+}
+#c{
+	/* code goes here to set the color*/
+	border:3px solid #db1d2d;
+}
+/* Code goes here for changing the color and pointer after hovering the mouse  */
+#c:hover{
+	background-color: #661920;
+}
+/* Code goes here for the color during active state */
+#c:active{
+	background-color: #db1d2d;
+}
+
+
+#d{
+	/* code goes here to set the color*/
+	border:3px solid #f0421c;
+}
+/* Code goes here for changing the color and pointer after hovering the mouse */
+#d:hover{
+	background-color: #6e2819;
+}
+/* Code goes here for the color during active state */
+#d:active{
+	background-color: #f0421c;
+}
+
+
+#e{
+	/* code goes here to set the color */
+	border:3px solid #fec02d;
+}
+/* Code goes here for changing the color and pointer after hovering the mouse  */
+#e:hover{
+	background-color: #735b20;
+}
+/* Code goes here for the color during active state */
+#e:active{
+	background-color: #fec02d;
+}
+
+
+
+#f{
+	/* code goes here to set the color*/
+	border:3px solid #20d071;
+}
+/* Code goes here for changing the color and pointer after hovering the mouse */
+#f:hover{
+	background-color: #1b613b;
+}
+/* Code goes here for the color during active state */
+#f:active{
+	background-color: #20d071;
+}
+
+
+
+#g{
+	/* code goes here to set the color */
+	border:3px solid #1a9ddb;
+}
+/* Code goes here for changing the color and pointer after hovering the mouse  */
+#g:hover{
+	background-color: #184d65;
+}
+/* Code goes here for the color during active state */
+#g:active{
+	background-color: #184d65;
+}
+
+
+
+#a{
+	/* code goes here to set the color*/
+	border:3px solid #a13fad;
+}
+/* Code goes here for changing the color and pointer after hovering the mouse */
+#a:hover{
+	background-color: #4e2753;
+}
+/* Code goes here for the color during active state */
+#a:active{
+	background-color: #a13fad;
+}
+
+
+
+#b{
+	/* code goes here to set the color*/
+	border:3px solid #f26fd4;
+}
+/* Code goes here for changing the color and pointer after hovering the mouse  */
+#b:hover{
+	background-color: #6f3a62;
+}
+/* Code goes here for the color during active state */
+#b:active{
+	background-color: #f26fd4;
+}

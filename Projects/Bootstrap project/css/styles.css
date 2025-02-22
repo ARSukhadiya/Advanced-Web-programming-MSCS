@@ -1,0 +1,15 @@
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.show {
+    color: var(--bs-navbar-active-color) !important;
+    font-size: 25px;
+}
+
+.c-item {
+    height: 700px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}

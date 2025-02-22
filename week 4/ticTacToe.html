@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #board{
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            grid-gap: 10px;
+            justify-content: center;
+        }
+
+        #board div{
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: blue;
+        }
+
+        /* .grid-container{
+            background-color: brown;
+            display: flex;
+            padding: 20px;
+            width: fit-content;
+            height: fit-content;
+            grid-gap: 10px;
+            justify-content: center;
+
+        }
+        .grid-item{
+            background-color: antiquewhite;
+            border: 1px solid black;
+            padding: 20px;
+            height: 20px;
+            text-align: center;
+        } */
+
+    </style>
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <div id="board">
+        <div class="x">X</div>
+        <div class="o">O</div>
+        <div></div>
+        <div class="x"></div>
+        <div class="o">O</div>
+        <div></div>
+        <div class="x">X</div>
+        <div class="x"></div>
+        <div class="x"></div>
+    </div>
+
+    <!-- <div class="grid-container">
+        <div class="grid-item" id="grid-1"></div>
+        <div class="grid-item" id="grid-2"></div>
+        <div class="grid-item" id="grid-3"></div>
+        <div class="grid-item" id="grid-4"></div>
+        <div class="grid-item" id="grid-5"></div>
+        <div class="grid-item" id="grid-6"></div>
+        <div class="grid-item" id="grid-7"></div>
+        <div class="grid-item" id="grid-8"></div>
+        <div class="grid-item" id="grid-9"></div>
+    </div> -->
+</body>
+</html>

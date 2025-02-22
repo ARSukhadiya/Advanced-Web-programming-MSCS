@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="library.js"></script>
+    <style>
+        button {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            background-color: green;
+            color: white;
+            height: 35px;
+            border-radius: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Welcome to My Library</h1>
+
+    <div>
+        <h3>Library Catalog</h3>
+        <ul></ul>
+    </div>
+    <div>
+        <h3>Book Sction</h3>
+        <label>Title</label><br>
+        <input id="title" type="text" placeholder="Enter your title">
+        <br>
+        <button id="find-book" onclick="onclickB1()">Find Book</button><br>
+        <button id="checkout-book" onclick="onclickB2()">Checkout Book</button><br>
+        <button id="return-book" onclick="onclickB3()">Return Book</button><br>
+    </div>
+    <span id="resultText"></span>
+</body>
+
+</html>

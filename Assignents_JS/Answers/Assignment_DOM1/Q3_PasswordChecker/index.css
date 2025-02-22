@@ -1,0 +1,14 @@
+.main {
+    background-color: lightgreen;
+    border: 2px solid black;
+    width: 30%;
+    padding: 10px;
+}
+
+.list_criteria {
+    /* list-style-type: circle */
+}
+
+.error_text {
+    color: red;
+}

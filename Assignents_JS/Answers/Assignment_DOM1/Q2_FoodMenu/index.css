@@ -1,0 +1,16 @@
+.main {
+    width: 200px;
+    background-color: bisque;
+    padding: 15px 0px 15px 0px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#menuTitle {
+    text-align: center;
+    color: green;
+}
+
+#menuItems {
+    color: black
+}

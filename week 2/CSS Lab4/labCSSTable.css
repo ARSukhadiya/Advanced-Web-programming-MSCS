@@ -1,0 +1,26 @@
+
+body {
+   background-color: white;
+   margin: 1em;
+   font-family: 'Roboto Condensed', sans-serif;
+   font-weight: 400;    
+   font-size: 16px;
+}
+
+table{
+   border-bottom: solid 2px #ededed;
+   border-collapse: collapse;
+}
+
+thead{
+   background-color: #ededed;
+   padding: 12px 0;
+   height: 40px;
+}
+
+td{
+   border-bottom: solid 2px #ededed;
+   padding-left: 24px;
+   padding-right: 24px;
+   height: 40px;
+}

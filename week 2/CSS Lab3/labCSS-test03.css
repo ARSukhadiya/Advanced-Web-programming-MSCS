@@ -1,0 +1,76 @@
+
+h1{
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: deeppink;
+    text-align: center;
+}
+
+span{
+    display: inline-block;
+    background-color: aqua;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+[class = "circle color1"]{
+    background-color: #f62f5e;
+}
+
+[class = "circle color2"]{
+    background-color: #f1ad3d;
+}
+
+[class = "circle color3"]{
+    background-color: #6ebdca;
+}
+
+[class = "circle color4"]{
+    background-color: #eefc91;
+}
+
+[class = "circle color5"]{
+    background-color: #F7ECEB;
+}
+
+.details{
+    font-size: 16px;
+    color: silver;
+    font-style: italic;
+}
+
+h2{
+    font-family: Oswald;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+h3{
+    font-family: Oswald;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+h4{
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.bodytext{
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.asidetext{
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+}
